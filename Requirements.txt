@@ -1,0 +1,12 @@
+Flask
+googlesearch
+bs4
+requests
+nltk
+wordcloud
+matplotlib
+sumy
+seaborn
+sklearn
+transformers
+
