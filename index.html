@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Abstractive Query-focused Multi-Document Summarization</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Abstractive Query-focused Multi-Document Summarization</h1>
+		<form action="/summarize" id="input-form" method="POST">
+			<div class="input-field">
+				<input type="text" id="query" required="required" >
+				<label for="query">Enter your query here</label>
+			</div>
+			<div class="input-field">
+				<input type="number" id="doccount" min="1" max="500">
+				<label for="wordcount">Number of documents to Refer</label>
+			</div>
+			<div class="input-field">
+				<input type="number" id="wordcount" min="1" max="500">
+				<label for="wordcount">Min number of words in Summary</label>
+			</div>
+			<!-- <div class="input-field">
+				<textarea id="urls"></textarea>
+				<label for="urls">List of URLs (one per line)</label>
+			</div> -->
+			<button class="btn waves-effect waves-light" type="submit" id="submit">Summarize</button>
+		</form>
+		<div id="summary">
+			<!-- This is where the summarized text will be displayed -->
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
