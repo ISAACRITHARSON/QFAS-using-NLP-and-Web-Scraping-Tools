@@ -1,7 +1,7 @@
 import numpy as np
 from flask import Flask, request, jsonify, render_template
 from googlesearch import search
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoupp
 import requests
 import nltk
 from nltk.corpus import stopwords
