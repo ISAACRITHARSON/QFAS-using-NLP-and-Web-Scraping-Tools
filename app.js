@@ -2,7 +2,7 @@ const form = document.querySelector('#input-form');
 const query = document.querySelector('#query');
 const wordcount = document.querySelector('#wordcount');
 const urls = document.querySelector('#urls');
-const summary = document.querySelector('#summary');
+const summary = document.querySelector('#summary')
 
 form.addEventListener('submit', (e) => {
 	e.preventDefault();
