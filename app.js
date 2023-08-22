@@ -7,7 +7,7 @@ const summary = document.querySelector('#summary');
 form.addEventListener('submit', (e) => {
 	e.preventDefault();
 	fetch('/summarize', {
-		method: 'POST'
+		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json'
 		},
